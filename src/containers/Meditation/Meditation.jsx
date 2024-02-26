@@ -68,6 +68,7 @@ export const Meditation = () => {
       songRef.current.ontimeupdate = updateProgress
 
       return () => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         songRef.current.ontimeupdate = null
       }
     }
