@@ -11,18 +11,18 @@ const MediaPlayer = ({
 }) => {
   return (
     <div className="player-container">
-      <audio class="song" ref={songRef}>
+      <audio className="song" ref={songRef}>
         <source src={audioSrc} />
       </audio>
       isPlaying ?
       <img
         src={`assets/svg/${isPlaying ? "pause" : "play"}.svg`}
-        class="play"
+        className="play"
         alt="control"
         onClick={handlePlayPause}
       />
       <svg
-        class="track-outline"
+        className="track-outline"
         width="453"
         height="453"
         viewBox="0 0 453 453"
@@ -34,11 +34,11 @@ const MediaPlayer = ({
           cy="226.5"
           r="216.5"
           stroke="white"
-          stroke-width="20"
+          strokeWidth="20"
         />
       </svg>
       <svg
-        class="moving-outline"
+        className="moving-outline"
         width="453"
         height="453"
         viewBox="0 0 453 453"
@@ -51,16 +51,16 @@ const MediaPlayer = ({
           cy="226.5"
           r="216.5"
           stroke="teal"
-          stroke-width="20"
+          strokeWidth="20"
         />
       </svg>
       <img
         src="assets/svg/replay.svg"
-        class="replay"
+        className="replay"
         onClick={restartSong}
         alt="restart"
       />
-      <h3 class="time-display">
+      <h3 className="time-display">
         {currentTime.minutes}:{currentTime.seconds}
       </h3>
     </div>
