@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from "react"
 
-import "./Meditation/css/style.css"
+import "./css/style.css"
 
-import Header from "../components/headers/Header"
-import VideoPlayer from "../components/Players/VideoPlayer"
-import TimeSelector from "../components/controls/timeSelector/TimeSelector"
-import MediaPlayer from "../components/Players/MediaPlayer"
-import SoundPicker from "../components/controls/soundPicker/SoundPicker"
-import Footer from "../components/footer/Footer"
+import Header from "../../components/headers/Header"
+import VideoPlayer from "../../components/Players/VideoPlayer"
+import TimeSelector from "../../components/controls/timeSelector/TimeSelector"
+import MediaPlayer from "../../components/Players/MediaPlayer"
+import SoundPicker from "../../components/controls/soundPicker/SoundPicker"
+import Footer from "../../components/footer/Footer"
 
 const videoSrc = "video/rain-converted.mp4"
 const audioSrc = "sounds/rain.mp3"

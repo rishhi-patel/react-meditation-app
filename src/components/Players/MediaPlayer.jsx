@@ -14,9 +14,10 @@ const MediaPlayer = ({
       <audio className="song" ref={songRef}>
         <source src={audioSrc} />
       </audio>
-      isPlaying ?
       <img
-        src={`assets/svg/${isPlaying ? "pause" : "play"}.svg`}
+        src={
+          Boolean(isPlaying) ? "assets/svg/pause.svg" : "assets/svg/play.svg"
+        }
         className="play"
         alt="control"
         onClick={handlePlayPause}
