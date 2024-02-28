@@ -255,7 +255,7 @@ b {
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
-    height: 73vh;
+    height: 70vh;
   }
   .time-select {
     flex-direction: row;
