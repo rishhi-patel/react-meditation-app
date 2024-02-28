@@ -251,3 +251,26 @@ b {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    height: 73vh;
+  }
+  .time-select {
+    flex-direction: row;
+  }
+  .sound-picker {
+    flex-direction: row;
+  }
+  .time-select button {
+    width: 29%;
+  }
+  .sound-picker button {
+    margin: 0 13px;
+  }
+
+  footer a {
+    display: block;
+  }
+}
